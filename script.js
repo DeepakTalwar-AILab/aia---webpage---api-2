@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSessionDisplay();
     });
 
-
     // ---
     // Event Listeners & UI Logic
     // ---
@@ -212,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return "You are a visionary storyteller. Transform the text into a compelling narrative or a bold, forward-looking statement.";
     }
 
-    // API Call
+    // API Call to Netlify Function
     async function handleSummarize() {
         const textToSummarize = inputTextArea.value;
         if (!textToSummarize.trim()) {
